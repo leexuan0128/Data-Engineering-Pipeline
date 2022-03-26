@@ -7,7 +7,7 @@ Build a data pipeline for an online order processing system based on a series of
 
 [3 Million Instacart Orders](https://tech.instacart.com/3-million-instacart-orders-open-sourced-d40d29ead6f2)
 
-### Tech Used
+### Services Used
 - AWS S3
 - AWS Glue Crawler
 - AWS Glue Databrew
@@ -25,7 +25,7 @@ High level architecture of data pipeline
     ![Glue](images/Glue.png)
 
 
-2. **(Query the data through Athena)**
+2. **Query the data through Athena**
 
     After the data is cataloged by Glue Crawler, we can use Athena to execuate the SQL statements to query the specific data. The transformed data will be stored into a new S3 bucket for the next processing. The files are also partitioned and converted into Parquet format to optimize performance and cost.
 
