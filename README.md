@@ -27,11 +27,22 @@ High level architecture of data pipeline
 
 2. **Query the data through Athena**
 
-    After the data is cataloged by Glue Crawler, we can use Athena to execuate the SQL statements to query the specific data. The transformed data will be stored into a new S3 bucket for the next processing. The files are also partitioned and converted into Parquet format to optimize performance and cost.
+    After the data is cataloged by Glue Crawler, we can use Athena to execuate the SQL statements to query the specific data. The transformed data will be stored into a new S3 bucket for the next processing. The files are also partitioned and converted into Parquet format to optimize performance and cost.  
+    e.g. _Query data from products, limit 10_  
+    ![query](/images/query.png)
+
 
 3. **ELT in Glue Databrew**
 
 
+
+
+
+
 4. **Dev Endpoints**
+
+
+
+
 
 5. **ETL in Glue Job**

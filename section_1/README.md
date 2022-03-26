@@ -12,7 +12,7 @@ We can draw an ERD to have a clear sight of the table structure and relaitionshi
 
 ![ERD](/section_1/img/ERD.png)
 
-## Query
+## Athena Query
 _Query to join orders table and order_products table together, filter on eval_set = ‘prior’_
 
 ```SQL
@@ -22,3 +22,5 @@ LEFT JOIN ORDER_PRODUCTS
     ON ORDERS.ORDER_ID = ORDER_PRODUCTS.ORDER_ID
 WHERE eval_set = 'prior';
 ```
+
+![q1](/section_1/img/Query1.png)
