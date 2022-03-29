@@ -1,5 +1,5 @@
 # AWS Glue DataBrew
-The high level of processing shows as follow:  
+The data lineage of whole DataBrew processing:  
 
 ![db4](/section_3/img/output.png)
 
@@ -12,10 +12,12 @@ What is the Glue DataBrew?
 
 ## DataBrew Processing
 1. Create a Dataset
-![db2](/section_3/img/q_dataset.png)
+
+    ![db2](/section_3/img/q_dataset.png)
 
 2. Create a Project
-![db3](/section_3/img/db_project.png)
+
+    ![db3](/section_3/img/db_project.png)
 
 3. Create a Recipe  
 What is the Recipe?
@@ -31,3 +33,6 @@ We set up the output path into another AWS S3 bucket.
 
     ![db4](/section_3/img/output2.png)
 
+    Repeat the process for user_features_1, user_features_2 and up_features based on the SQL queries from the project section 2.
+
+    
