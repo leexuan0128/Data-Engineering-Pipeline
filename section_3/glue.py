@@ -12,7 +12,7 @@ def main():
     glueContext = GlueContext(SparkContext.getOrCreate())
       
     # creating dataframes from existing athena catelog
-    up_features = glueContext.create_dynamic_frame_from_options(connection_type = "parquet", connection_options = {"paths": ["s3://imba-shawn/features/up_feature_db/"]})
+    up_features = glueContext.create_dynamic_frame_from_options(connection_type = "parquet", connection_options = {"paths": ["s3://imba-shawn/features/up_features_db/"]})
     prd_features = glueContext.create_dynamic_frame_from_options(connection_type = "parquet", connection_options = {"paths": ["s3://imba-shawn/features/prd_feature_db/"]})
     user_features_1 = glueContext.create_dynamic_frame_from_options(connection_type = "parquet", connection_options = {"paths": ["s3://imba-shawn/features/user_features_1_db/"]})
     user_features_2 = glueContext.create_dynamic_frame_from_options(connection_type = "parquet", connection_options = {"paths": ["s3://imba-shawn/features/user_features_2_db/"]})

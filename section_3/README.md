@@ -43,4 +43,5 @@ Use a Glue Dev Endpoints - SageMaker notebook, which achieves:
 1. Join up_features, prd_features, user_features_1 and user_features_2 into one dataframe.
 2. Write the output as a single csv file to S3 bucket.
 
-    see [PySpark](/section_3/PySpark.ipynb)
+    see [PySpark](/section_3/PySpark_Glue_Job.ipynb)
+    ![db6](/section_3/img/output4.png)
