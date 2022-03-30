@@ -35,4 +35,12 @@ We set up the output path into another AWS S3 bucket.
 
     Repeat the process for user_features_1, user_features_2 and up_features based on the SQL queries from the project section 2.
 
-    
+    ![db5](/section_3/img/output3.png)
+
+
+## Glue Development Endpoint
+Use a Glue Dev Endpoints - SageMaker notebook, which achieves:
+1. Join up_features, prd_features, user_features_1 and user_features_2 into one dataframe.
+2. Write the output as a single csv file to S3 bucket.
+
+    see [PySpark](/section_3/PySpark.ipynb)
