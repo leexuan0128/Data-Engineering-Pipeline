@@ -42,13 +42,25 @@ High level architecture of our ETL data pipeline
 
     ![explore-data](/images/explore-data.png)
 
-    Refer to [Section 3](section_3) 
+    Refer to [Section 3](section_3) and [Section 4](section_4)
 
 
-4. **Automatic Glue Job**
+4. **Automatic Glue Job**  
+
+    High levels of the automated Glue Job pipeline are as follows:
+
+    1. Create target Lambda functions after the AWS DataBrew Project and AWS Glue Job script completion.
+    2. Schedule AWS Lambda functions using AWS EventBridge, which will periodically trigger Lambda functions to run Glue Job automatically.  
+
+    The sturcture contains two:
+    - Scheduled Based
+    - Trigger Based
 
 
 
+
+
+    Refer to [Section 5](section_5)
 
 
 5. **Create a ML Model**
