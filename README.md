@@ -63,9 +63,13 @@ High level architecture of our ETL data pipeline
     Refer to [Section 5](section_5)
 
 
-5. **Create a ML Model**
+5. **Machine Learning Model**
 
 
 
 
-6. **Results**
+6. **Model Deployment**
+
+
+
+7. **Results**
