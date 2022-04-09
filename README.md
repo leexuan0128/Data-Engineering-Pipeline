@@ -47,6 +47,8 @@ High level architecture of our ETL data pipeline
 
 4. **Automatic Glue Job**  
 
+    Use Cases: When your data source updates at 8:00 am each day, you will triggle a automated Glue ETL Job using well-designed lambda functions, which will enhance your data pipeline performance!
+
     High levels of the automated Glue Job pipeline are as follows:
 
     1. Create target Lambda functions after the AWS DataBrew Project and AWS Glue Job script completion.
@@ -56,11 +58,7 @@ High level architecture of our ETL data pipeline
     - Scheduled Based
     - Trigger Based
 
-
-
-
-
-    Refer to [Section 5](section_5)
+    Details refer to [Section 5](section_5)
 
 
 5. **Machine Learning Model**
