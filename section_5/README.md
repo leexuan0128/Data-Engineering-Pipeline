@@ -22,7 +22,7 @@ Use Cases:
     response = glue.start_job_run(JobName='gluejob3.0')
     ```
 
-    **Lambda functions for Glue Job**:  
+    **Lambda functions for DataBrew**:  
     - Name: databrew-etl-daily  
     - Runtime: python 3.8  
     - IAM Role: Full access to Databrew
@@ -46,3 +46,25 @@ Use Cases:
     - Rule type: schedule
     - Pattern: rate expression (fixed rate of day)
     - Target: lambda functon (databrew-etl-daily)
+
+## Trigger-Based Architecture 
+![5-2](/section_5/img/Automated%20ETL%20Pipeline%20(Trigger%20Based).jpeg)  
+
+- Create Lambda Functions  
+See above, same as the schedule-based method.
+
+- Cteate Event Notification  
+**Notification for Trigger Databrew**:  
+
+    - Name: databrew-etl  
+    - Prefix: features/order_products_prior/  
+    - Object creation: All object create events  
+    - Destination: lambda functon (databrew-etl-daily)
+
+    **Notification for Trigger Glue Job**:
+
+    - Name: glue-job-etl
+    - Prefix: schedule
+    - Object creation: All object create events
+    - Destination: lambda functon (glue-job-etl-daily)
+
