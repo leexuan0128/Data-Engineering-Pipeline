@@ -61,13 +61,17 @@ High level architecture of our ETL data pipeline
     Details refer to [Section 5](section_5)
 
 
-5. **Machine Learning Model**
+5. **Machine Learning Model**  
+After this step, we have a sample model using 10% of total data and compete final model. 
+Details refer to [Section 6](/section_6/)
 
 
+6. **Model Deployment**  
+Once we managed to build the final predict model for our user purchase prediction system, we want to deploy our model to cloud, hosting it on the AWS Sagemaker, which makes our users easier to invoke by a secure and simple API Gateway manner.
+Details refer to [Section 7](/section_7/)
 
 
-6. **Model Deployment**
-
-
-
-7. **Results**
+7. **Results**  
+The system should outputs the prediction result via AWS API gateway, which will show a probability through the user features.  
+The results will show on a public demo page:  
+![results]()
