@@ -74,4 +74,5 @@ Details refer to [Section 7](/section_7/)
 7. **Results**  
 The system should outputs the prediction result via AWS API gateway, which will show a probability through the user features.  
 The results will show on a public demo page:  
-![results]()
+
+    ![results](/images/result.png)
