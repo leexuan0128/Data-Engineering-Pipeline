@@ -63,7 +63,9 @@ For the integration point, make sure that **Lambda Function** is selected and cl
 
 - You have now successfully set up a public API to access your SageMaker model. Make sure to copy or write down the URL provided to invoke your newly created public API as this will be needed in the next step. This URL can be found at the top of the page, highlighted in blue next to the text **Invoke URL**.
 
-![post](/section_7/POST.png)
+    ![post](/section_7/POST.png)
 
 ## Deploy the Web App
 Open `index.html` on the local computer, the browser will behave as a local web server and we can use the site to interact with the SageMaker model and output the prediction result.
+
+_Note: remember to close the notebook instance and endpoints to avoid the extra charge._
